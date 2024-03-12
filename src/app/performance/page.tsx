@@ -4,10 +4,13 @@ import Link from 'next/link';
 
 export default function performancePage() {
   return (
-    <div>
-      <Hero title="High Performance" imgAlt="performanceImg" imgData={PerfomanceImg} />
-      <button>
-        <Link href="/performace/task"> Task</Link>
+    <div className="flex flex-col gap-2 justify-between items-center">
+      {/* <Hero title="High Performance" imgAlt="performanceImg" imgData={PerfomanceImg} /> */}
+      <button className="p-2 w-[100px] bg-gray-200 shadow-md rounded-md">
+        <Link href="/performance/task"> Task</Link>
+      </button>
+      <button className="p-2  w-[100px] bg-gray-200 shadow-md rounded-md">
+        <Link href="/performance/P001"> P001</Link>
       </button>
     </div>
   );
